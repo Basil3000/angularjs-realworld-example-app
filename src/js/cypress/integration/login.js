@@ -1,4 +1,7 @@
 import { login } from './util'
+// Ideally we would sign up a new user first
+// then log in and do all those tests
+// then delete the user from the db.  Alas will do that with more time...
 
 describe('Login tests', () => {
    // Valid user details 

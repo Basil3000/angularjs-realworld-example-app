@@ -1,5 +1,6 @@
 describe('Global Feed Load Test', () => {
     it('global feed is loaded correctly', () => {   
+    // login with API and set jwt
     cy
     .request({method:'POST', 
              url:'https://conduit.productionready.io/api/users/login',
@@ -21,7 +22,6 @@ describe('Global Feed Load Test', () => {
     cy.wait('@user').its('status').should('eq', 200)        
     cy.wait('@tags').its('status').should('eq', 200)
     cy.wait('@feed').its('status').should('eq', 200)
-
 
     })
 })

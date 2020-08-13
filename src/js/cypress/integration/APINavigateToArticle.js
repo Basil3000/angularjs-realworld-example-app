@@ -1,7 +1,8 @@
 describe('API Navigation to an article tests', () => {
    
-    // Here we want to create a new article then get to it
-
+    // Here ideally we want to create a new article then get to it
+    // we also want to delete it afterwards so we can
+    // reuse the same data
    
     it('A valid article can be found via API', () => {   
         cy
